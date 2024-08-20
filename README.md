@@ -132,8 +132,6 @@ To avoid filling Redis storage with stale subscription data:
 
  2. Execute `rake graphql:anycable:clean` once in a while to clean up stale subscription data.
 
-    Heroku users should set up `use_redis_object_on_cleanup` setting to `false` due to [limitations in Heroku Redis](https://devcenter.heroku.com/articles/heroku-redis#connection-permissions).
-
 ## Configuration
 
 GraphQL-AnyCable uses [anyway_config] to configure itself. There are several possibilities to configure this gem:
